@@ -1,0 +1,71 @@
+.aside-bar-container {
+  position: relative;
+  width: 6.2%;
+  height: 100vh;
+  background-color: #121212;
+
+  .aside-bar-lists {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    .aside-bar-list {
+      position: relative;
+      width: 100%;
+      list-style: none;
+      height: 3.7rem;
+      margin-bottom: 0.65rem;
+
+      a {
+        text-decoration: none;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          height: 35%;
+          width: 20%;
+        }
+
+        span {
+          margin-top: 0.2rem;
+          font-size: 0.75rem;
+          color: #fff;
+          opacity: 0.7;
+        }
+      }
+
+      &:hover {
+          background: #272c34;
+          a{
+              span {
+                  opacity: 1;
+              }
+          }
+      }
+
+      &:first-child {
+        a {
+          border-bottom: 1px solid #fff;
+          img {
+            height: 80%;
+            width: 55%;
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        a {
+          img {
+            border-radius: 50%;
+            height: 70%;
+            width: 45%;
+          }
+        }
+      }
+    }
+  }
+}

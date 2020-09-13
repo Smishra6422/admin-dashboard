@@ -1,0 +1,36 @@
+.navbar-conainer {
+  position: relative;
+  padding: 0 15px 0 15px;
+  background-color: #f1f1f1;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+  border-top: 1px solid rgba(0,0,0,.125);
+
+  ul {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+    li {
+      position: relative;
+      list-style: none;
+
+      a {
+        display: block;
+        text-align: center;
+        padding: 11px 15px;
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+        color: #111;
+        opacity: 0.8;
+
+        &:hover {
+          border-bottom: 2px solid #0d6efd;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
